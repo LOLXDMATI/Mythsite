@@ -1,53 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Game.css">
-    <title>Game</title>
+    <title>LXM Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <canvas id="c"></canvas>
+    <header>
 
-    <div class="hud">
-        <div class="hud__score">
-            <div class="score-lbl"></div>
-            <div class="cube-count-lbl"></div>
-        </div>
-        <div class="pause-btn">
-            <div></div>
-        </div>
-        <div class="slowmo">
-            <div class="slowmo__bar"></div>
+        <nav>
+            <ul class="nav__links">
+                <li><a href=http://127.0.0.1:5500/websites/main%20website/Game.html>Game</a></li>
+                <li><a href=http://127.0.0.1:5500/websites/main%20website/skills.html>Skills</a></li>
+                <li><a href="http://127.0.0.1:5500/websites/main%20website/About%20me.html">About</a></li>
+            </ul>
+        </nav>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href=http://127.0.0.1:5500/websites/main%20website/Game.html>Game</a>
+            <a href="#">Skills</a>
+            <a href="http://127.0.0.1:5500/websites/main%20website/About%20me.html">About</a>
         </div>
     </div>
+    <script type="text/javascript" src="main.js"></script>
 
+    <section>
+        <div>
+            <h1>Welcome To My Portfolio Website!</h1>
+            <p> Hi, <br> This Is my first portfolio website. In this website you can find information about me or my other projects. You can even contact me! <br> Enjoy! </p>
+            <h4>&copy;Mateusz Płonka</h4>
 
-    <div class="menus">
-        <div class="menu menu--main">
-            <h1>NINJA CUBE</h1>
-            <button type="button" class="play-normal-btn">PLAY GAME</button>
-            <button type="button" class="play-casual-btn">CASUAL MODE</button>
-
-        </div>
-        <div class="menu menu--pause">
-            <h1>Paused</h1>
-            <button type="button" class="resume-btn">RESUME GAME</button>
-            <button type="button" class="menu-btn--pause">MAIN MENU</button>
-        </div>
-        <div class="menu menu--score">
-            <h1>Game Over</h1>
-            <h2>Your Score:</h2>
-            <div class="final-score-lbl"></div>
-            <div class="high-score-lbl"></div>
-            <button type="button" class="play-again-btn">PLAY AGAIN</button>
-            <button type="button" class="menu-btn--score">MAIN MENU</button>
-        </div>
-    </div>
-    <script src="Game.js"></script>
+    </section>
 </body>
 
 </html>
